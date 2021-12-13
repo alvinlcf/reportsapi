@@ -22,7 +22,7 @@ public class ReportsController {
 	@Autowired
 	private TableauService tableauService;
 
-	@RequestMapping(value = "/name/{username}", method = RequestMethod.POST, produces = {
+	@RequestMapping(value = "/name/{username}", method = RequestMethod.GET, produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	public TableauListingDTO welcomenotes(@PathVariable("username") String username) {
 		StringBuilder welcomenotes = new StringBuilder("Hi ");
